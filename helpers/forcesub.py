@@ -39,7 +39,7 @@ async def ForceSub(bot: Client, cmd: Message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🤖 Join Channel 🤖", url=invite_link.invite_link)]
+                    [InlineKeyboardButton("Dont use this bot", url=invite_link.invite_link)]
                 ]
             )
         )
