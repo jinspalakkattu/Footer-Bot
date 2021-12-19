@@ -20,4 +20,4 @@ Don't use my bot or you will get ban !!
 """
 
 
-text=START_TEXT.format(message.from_user.first_name) 
+START_TEXT.format(message.from_user.first_name) 
