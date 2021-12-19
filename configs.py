@@ -14,7 +14,7 @@ class Config(object):
     BOT_OWNER = int(os.environ.get("BOT_OWNER", 1445283714))
     MONGODB_URI = os.environ.get("MONGODB_URI", "")
     START_TEXT = """
-"Hi {}".format(message.from_user.first_name),I am a anjumani footer bot join my channel https://t.me/anjumani_zone!
+Hi "{}.format(message.from_user.first_name)",I am a anjumani footer bot join my channel https://t.me/anjumani_zone!
 
 Don't use my bot or you will get ban !!
 """
