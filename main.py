@@ -31,7 +31,7 @@ async def _start(bot: Client, m: Message):
     await AddUserToDatabase(bot, m)
     try:
         await m.reply_text(
-            Config.START_TEXT,
+            Config.START_TEXT.format(name=m.from_user.first_name),
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("Anjumani channel", url="https://t.me/anjumani_zone"), InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
